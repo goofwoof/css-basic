@@ -99,3 +99,110 @@ p {
     border: 1px solid red;
     color: red;
 }
+
+
+/*
+ work begin
+ 设 `#banner` 高度为350px.
+ */
+#banner{
+    height: 350px;
+}
+
+/*
+给 `h1` 添加 border style, 样式参考mockup.
+*/
+h1{
+    border-style: solid ;
+    border-width: medium; /* sets border width on all sides */
+    border-color: white;
+}
+
+/*
+设置 `h3` border 样式参考mockup.
+使用简写, 设置 `h3` 上下 margins 30 px, 左右 margins 20 px.
+使用简写, 设置 `h3` 上下 padding 20 px, 左右 padding 30 px.
+*/
+h3{
+    border-style: dashed ;
+    border-width: thin;
+    border-left-width: 0px;
+    border-color: red;
+    margin: 30px 20px;
+    padding: 20px 30px;
+
+}
+
+/*
+设置 `.navigation li` elements to have 10 pixels of padding.
+*/
+.navigation li{
+    padding: 10px;
+}
+
+/*
+设置 `.share a` elements to have 14 pixels of padding.
+设置 `.share a ` margin 为 10 px.
+*/
+.share a{
+    padding: 14px;
+    margin: 10px;
+}
+
+/*
+设置每个段落向上 margin 为 40 px.
+*/
+p{
+    margin-top: 40px;
+}
+
+/*
+设置 `.pull-quote` 的宽度为 400 px. 并且通过 `margin` 使其水平居中.
+*/
+.pull-quote{
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*
+设置 `#main` 的 `margin` 使其内容水平居中 .
+设置 `#main` 宽度为500px, 高度为800px, 并且超出可以滚动.
+*/
+#main{
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 800px;
+    overflow-y: scroll;
+}
+/*隐藏滚动条*/
+#main::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+重置 `body` 的 margin and padding default values.
+*/
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+隐藏 `.global`
+*/
+.global{
+    visibility: hidden;
+}
+
+/*不一致修改*/
+h2{
+    padding: 0px 10px;
+    font-size: 25.5px;
+    font-weight: 700;
+}
+h1 {
+    top: 40px;
+    font-size: 40px;
+}
